@@ -85,6 +85,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_RECOVERY_FSTAB := device/samsung/winner/recovery/root/etc/recovery.fstab
+TW_USE_TOOLBOX := true
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := false
