@@ -61,8 +61,8 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # Image
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 BOARD_INCLUDE_RECOVERY_DTBO := true
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 firmware_class.path=/vendor/firmware_mnt/image androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE := 0x00000000
@@ -101,9 +101,9 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
 
 # TWRP
-TW_DEVICE_VERSION := 4_chrisaw
+TW_DEVICE_VERSION := 5_chrisaw
 RECOVERY_VARIANT := twrp
-TW_THEME := portrait_hdpi
+TW_THEME := landscape_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
