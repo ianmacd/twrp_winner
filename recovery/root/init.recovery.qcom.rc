@@ -43,7 +43,6 @@ on init
     wait /dev/block/bootdevice/by-name/vendor
 
     start hwservicemanager
-    start prepdecrypt
     start time_daemon
 
 # Separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
@@ -51,13 +50,6 @@ service sbinqseecomd /sbin/qseecomd
     user root
     group root
     disabled
-    seclabel u:r:recovery:s0
-
-service prepdecrypt /sbin/prepdecrypt.sh
-    oneshot
-    disabled
-    user root
-    group root
     seclabel u:r:recovery:s0
 
 service hwservicemanager /sbin/hwservicemanager
