@@ -99,7 +99,9 @@ TW_INCLUDE_FBE := true
 # TWRP
 RECOVERY_VARIANT := twrp
 
-TW_THEME := portrait_hdpi
+# Clock and battery must be shunted to the left to avoid the notch.
+TW_CUSTOM_THEME := $(DEVICE_PATH)/fold_portrait_hdpi
+
 TW_ROTATION := 270
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
