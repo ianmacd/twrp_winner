@@ -90,7 +90,7 @@
 		<variable name="center_x" value="540"/>
 		<variable name="center_fold" value="320"/>
 		<variable name="col1_x_right" value="576"/>
-		<variable name="indent_right" value="644"/>
+		<variable name="indent_right" value="654"/>
 		<variable name="tab_height" value="96"/>
 		<variable name="tab_indicator_height" value="6"/>
 		<variable name="tab_y" value="304"/>
