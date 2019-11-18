@@ -99,10 +99,21 @@ TW_INCLUDE_FBE := true
 # TWRP
 RECOVERY_VARIANT := twrp
 
+# Portrait orientation:
+#
 # Clock and battery must be shunted to the left to avoid the notch.
-TW_CUSTOM_THEME := $(DEVICE_PATH)/fold_portrait_hdpi
-
+TW_CUSTOM_THEME := $(DEVICE_PATH)/portrait_hdpi
 TW_ROTATION := 270
+
+# Landscape orientation:
+#
+# Entire display must be shunted to the right to avoid the notch.
+#TW_THEME := landscape_hdpi
+#TW_X_OFFSET := 100
+#TW_W_OFFSET := -100
+#RECOVERY_TOUCHSCREEN_SWAP_XY := true
+#RECOVERY_TOUCHSCREEN_FLIP_Y := true
+
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
